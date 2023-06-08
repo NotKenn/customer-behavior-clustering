@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Predicting Customer Group</title>
+    </head>
+    <body>
+        <h1>Predicting Customer Group</h1>
+		<form action="{{ url_for('getresult') }}" method="post">
+			<label>Costs</label>
+			<input type ="text" name="cost" placeholder="Costs(In Million(IDR))"></input>
+			<label>Qty</label>
+			<input type ="text" name="qty" placeholder="Qty(In Carton)"></input>
+			<button type ="submit" class ="btn- btn-primary btn-block btn-large">Get Result</button>
+		</form>
+			<br>
+			<br>
+			{{ output }}
+    <body>
+</html>
